@@ -2,14 +2,14 @@ version: '3.6'
 
 services:
 
-  server:
+  webserver:
     image: httpd:2.4
     volumes:
       - ./:/usr/local/apache2/htdocs/
     ports:
       - 80:80
 
-  pexel:
+  apiserver:
     image: node:14
     volumes:
       - ./pexel:/server/

@@ -11,3 +11,6 @@
       pour pouvoir effectuer un hash sha1
     - La lib Axios pour se connecter en http aux APIs
     - Divers lib pour le serveur http nodejs (url, http)
+# Y accéder
+    Pour y accéder, il suffit de se connecter sur le localhost, 
+    une fois le docker-compose up lancé
