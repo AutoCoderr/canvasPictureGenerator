@@ -1,0 +1,19 @@
+version: '3.6'
+
+services:
+
+  server:
+    image: httpd:2.4
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    ports:
+      - 80:80
+
+  pexel:
+    image: node:14
+    volumes:
+      - ./pexel:/server/
+    working_dir: /server
+    ports:
+      - 8080:8080
+    command: node serv.js

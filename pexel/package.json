@@ -1,0 +1,17 @@
+{
+  "name": "canvac_picture_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colorthief": "^2.3.2",
+    "http": "0.0.1-security",
+    "pexels": "^1.0.1",
+    "url": "^0.11.0"
+  }
+}
