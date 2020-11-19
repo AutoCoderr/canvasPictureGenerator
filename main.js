@@ -1,9 +1,12 @@
 const conceptNet = new ConceptNet();
 
-const width = 300, height = 300;
+const width = 600, height = 600;
 const canvas = document.getElementById('canvas');
 canvas.width = width;
 canvas.height = height;
+document.getElementById("canvasDiv").style.backgroundSize = width+"px "+height+"px";
+document.getElementById("canvasDiv").style.width = width+"px";
+document.getElementById("canvasDiv").style.height = height+"px";
 
 const valuesInHash = {
     a: 10,
@@ -67,7 +70,6 @@ function generateCanvas(msg,photo,color) {
         numberColor += msg[i];
         msg[i] *= 10;
     }
-    //const color = colors[numberColor%colors.length];
 
     let forms = [];
 
@@ -91,7 +93,7 @@ function generateCanvas(msg,photo,color) {
         });
     }
     let ctx = canvas.getContext('2d');
-    ctx.clearRect(0,0,300,300);
+    ctx.clearRect(0,0,width,height);
     document.getElementById("canvasDiv").style.backgroundImage = "url('"+photo+"')";
 
     for (let form of forms) {
